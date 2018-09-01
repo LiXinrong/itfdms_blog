@@ -1,0 +1,58 @@
+package com.itfdms.monitor.config;
+
+import com.itfdms.monitor.filter.StatusChangeNotifier;
+import de.codecentric.boot.admin.notify.RemindingNotifier;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
+import org.springframework.scheduling.annotation.EnableScheduling;
+import org.springframework.scheduling.annotation.Scheduled;
+
+import java.util.concurrent.TimeUnit;
+
+/**
+ * java类简单作用描述
+ *
+ * @ProjectName: itfdms_blog
+ * @Package: com.itfdms.monitor.config
+ * @ClassName: ItfdmsNotifierConfiguration
+ * @Description: 监控提醒配置
+ * @Author: lxr
+ * @CreateDate: 2018-08-26 17:49
+ * @UpdateUser: lxr
+ * @UpdateDate: 2018-08-26 17:49
+ * @UpdateRemark: The modified content
+ * @Version: 1.0
+ **/
+
+@Configuration
+@EnableScheduling
+public class ItfdmsNotifierConfiguration {
+
+    @Autowired
+    private RabbitTemplate rabbitTemplate;
+
+    @Autowired
+    private MonitorPropertiesConfig monitorPropertiesConfig;
+
+    @Bean
+    @Primary
+    public RemindingNotifier remindingNotifier() {
+        RemindingNotifier remindingNotifier = new RemindingNotifier(mobileNotifier());
+        remindingNotifier.setReminderPeriod(TimeUnit.MINUTES.toMillis(1));
+        return remindingNotifier;
+    }
+
+    @Bean
+    public StatusChangeNotifier mobileNotifier(){
+        return new StatusChangeNotifier(monitorPropertiesConfig,rabbitTemplate);
+    }
+
+    @Scheduled(fixedRate = 60_000L)
+    public void remind() {
+        remindingNotifier().sendReminders();
+    }
+
+}

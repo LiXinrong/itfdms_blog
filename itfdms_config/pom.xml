@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <!--模块属性-->
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.itfdms</groupId>
+    <artifactId>itfdms_config</artifactId>
+    <version>1.0.0</version>
+    <packaging>jar</packaging>
+    <name>itfdms_config</name>
+    <description>配置中心</description>
+
+    <!--导入父项目-->
+    <parent>
+        <groupId>com.itfdms</groupId>
+        <artifactId>itfdms_parent</artifactId>
+        <version>1.0.0</version>
+        <relativePath>../itfdms_parent</relativePath> <!-- lookup parent from repository -->
+    </parent>
+
+    <!--本项目模块需单独引入得jar包-->
+    <dependencies>
+        <!--配置中心服务-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-config-server</artifactId>
+        </dependency>
+
+        <!--消息总线-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bus-amqp</artifactId>
+        </dependency>
+    </dependencies>
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <finalName>${project.name}</finalName>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+
+</project>

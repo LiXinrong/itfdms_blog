@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.itfdms</groupId>
+	<artifactId>itfdms_blog</artifactId>
+	<packaging>pom</packaging>
+	<version>1.0.0</version>
+	<name>itfdms_blog</name>
+	<description>itfdms_blog project for Spring Boot</description>
+
+	<!--项目包含模块-->
+	<modules>
+		<module>itfdms_parent</module>
+		<module>itfdms_config</module>
+		<module>itfdms_common</module>
+		<module>itfdms_eureka</module>
+		<module>itfdms_gateway</module>
+		<module>itfdms_auth</module>
+		<module>itfdms_visual</module>
+		<module>itfdms_modules</module>
+	</modules>
+
+</project>

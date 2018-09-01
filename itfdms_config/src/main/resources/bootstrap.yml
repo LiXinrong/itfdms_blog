@@ -1,0 +1,63 @@
+server:
+  port: 4001
+
+spring:
+  application:
+    name: itfdms-config-server
+  profiles:
+    active: devl
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/LiXinrong/itfdms_blog_config.git
+          default-label: ${spring.profiles.active}   #解决监控down
+
+# 关闭安全管理
+management:
+  security:
+    enabled: false
+endpoints:
+  health:
+    sensitive: false
+
+---
+spring:
+  profiles: devl
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: admin
+    password: lixinrong921016.
+eureka:
+  instance:
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 20
+  client:
+    serviceUrl:
+      defaultZone: http://itfdms:lixinrong921016.@localhost:1025/eureka
+    registry-fetch-interval-seconds: 10
+
+
+---
+spring:
+  profiles: prod
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: admin
+    password: lixinrong921016.
+  cloud:
+    config:
+      retry:
+        initial-interval: 30005
+        multiplier: 1.5
+        max-interval: 20000
+        max-attempts: 6
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://itfdms:lixinrong921016.@localhost:1025/eureka

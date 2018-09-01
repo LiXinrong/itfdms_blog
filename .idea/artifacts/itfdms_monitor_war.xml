@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="itfdms_monitor:war">
+    <output-path>$PROJECT_DIR$/itfdms_visual/target</output-path>
+    <root id="archive" name="itfdms_monitor-${itfdms.version}.war">
+      <element id="artifact" artifact-name="itfdms_monitor:war exploded" />
+    </root>
+  </artifact>
+</component>

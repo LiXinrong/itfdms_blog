@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/itfdms_auth/itfdms_auth.iml" filepath="$PROJECT_DIR$/itfdms_auth/itfdms_auth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itfdms_blog.iml" filepath="$PROJECT_DIR$/itfdms_blog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itfdms_common/itfdms_common.iml" filepath="$PROJECT_DIR$/itfdms_common/itfdms_common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itfdms_config/itfdms_config.iml" filepath="$PROJECT_DIR$/itfdms_config/itfdms_config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itfdms_modules/itfdms_daemon_service/itfdms_daemon_service.iml" filepath="$PROJECT_DIR$/itfdms_modules/itfdms_daemon_service/itfdms_daemon_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itfdms_eureka/itfdms_eureka.iml" filepath="$PROJECT_DIR$/itfdms_eureka/itfdms_eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itfdms_gateway/itfdms_gateway.iml" filepath="$PROJECT_DIR$/itfdms_gateway/itfdms_gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itfdms_modules/itfdms_mc_service/itfdms_mc_service.iml" filepath="$PROJECT_DIR$/itfdms_modules/itfdms_mc_service/itfdms_mc_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itfdms_modules/itfdms_modules.iml" filepath="$PROJECT_DIR$/itfdms_modules/itfdms_modules.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itfdms_visual/itfdms_monitor/itfdms_monitor.iml" filepath="$PROJECT_DIR$/itfdms_visual/itfdms_monitor/itfdms_monitor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itfdms_parent/itfdms_parent.iml" filepath="$PROJECT_DIR$/itfdms_parent/itfdms_parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itfdms_modules/itfdms_sso_client/itfdms_sso_client.iml" filepath="$PROJECT_DIR$/itfdms_modules/itfdms_sso_client/itfdms_sso_client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itfdms_modules/itfdms_upms_service/itfdms_upms_service.iml" filepath="$PROJECT_DIR$/itfdms_modules/itfdms_upms_service/itfdms_upms_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itfdms_visual/itfdms_visual.iml" filepath="$PROJECT_DIR$/itfdms_visual/itfdms_visual.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itfdms_visual/itfdms_zipkin_db/itfdms_zipkin_db.iml" filepath="$PROJECT_DIR$/itfdms_visual/itfdms_zipkin_db/itfdms_zipkin_db.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itfdms_visual/itfdms_zipkin_elk/itfdms_zipkin_elk.iml" filepath="$PROJECT_DIR$/itfdms_visual/itfdms_zipkin_elk/itfdms_zipkin_elk.iml" />
+    </modules>
+  </component>
+</project>

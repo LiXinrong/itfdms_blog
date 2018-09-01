@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="itfdms_daemon_service:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/itfdms_daemon_service_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="itfdms_daemon_service/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="itfdms_daemon_service" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

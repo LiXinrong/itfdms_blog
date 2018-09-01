@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="itfdms_zipkin_db:war">
+    <output-path>$PROJECT_DIR$/itfdms_visual/itfdms_zipkin_db/target</output-path>
+    <root id="archive" name="itfdms_zipkin_db-1.0.0.war">
+      <element id="artifact" artifact-name="itfdms_zipkin_db:war exploded" />
+    </root>
+  </artifact>
+</component>

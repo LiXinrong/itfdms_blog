@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/itfdms_visual/itfdms_monitor" />
+    <file type="web" url="file://$PROJECT_DIR$/itfdms_visual/itfdms_zipkin_db" />
+    <file type="web" url="file://$PROJECT_DIR$/itfdms_visual/itfdms_zipkin_elk" />
+    <file type="web" url="file://$PROJECT_DIR$/itfdms_visual/src/main/java" />
+    <file type="web" url="file://$PROJECT_DIR$/itfdms_visual/src/main/resources" />
+    <file type="web" url="file://$PROJECT_DIR$/itfdms_visual/src/test/java" />
+    <type id="Spring" />
+  </component>
+  <component name="Kotlin2JsCompilerArguments">
+    <option name="sourceMapEmbedSources" />
+    <option name="sourceMapPrefix" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/itfdms_parent/pom.xml" />
+        <option value="$PROJECT_DIR$/itfdms_config/pom.xml" />
+        <option value="$PROJECT_DIR$/itfdms_user/pom.xml" />
+        <option value="$PROJECT_DIR$/itfdms_common/pom.xml" />
+        <option value="$PROJECT_DIR$/itfdms_eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/itfdms_gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/itfdms_auth/pom.xml" />
+        <option value="$PROJECT_DIR$/itfdms_visual/pom.xml" />
+        <option value="$PROJECT_DIR$/itfdms_visual/itfdms_monitor/pom.xml" />
+        <option value="$PROJECT_DIR$/itfdms_visual/itfdms_zipkin_elk/pom.xml" />
+        <option value="$PROJECT_DIR$/itfdms_visual/itfdms_zipkin_db/pom.xml" />
+        <option value="$PROJECT_DIR$/itfdms_modules/itfdms_sso_client/pom.xml" />
+        <option value="$PROJECT_DIR$/itfdms_modules/pom.xml" />
+        <option value="$PROJECT_DIR$/itfdms_modules/itfdms_upms_service/pom.xml" />
+        <option value="$PROJECT_DIR$/itfdms_modules/itfdms_mc_service/pom.xml" />
+        <option value="$PROJECT_DIR$/itfdms_modules/itfdms_daemon_service/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

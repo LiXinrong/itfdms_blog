@@ -1,0 +1,36 @@
+spring:
+  application:
+    name: itfdms-zipkin-db
+  profiles:
+    active: devl
+  cloud:
+    config:
+      fail-fast: true
+      discovery:
+        service-id: itfdms-config-server
+        enabled: true
+      profile: ${spring.profiles.active}
+      label: ${spring.profiles.active}
+
+---
+spring:
+  profiles: devl
+eureka:
+  instance:
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 20
+  client:
+    serviceUrl:
+      defaultZone: http://itfdms:lixinrong921016.@localhost:1025/eureka
+    registry-fetch-interval-seconds: 10
+
+---
+spring:
+  profiles: prod
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://itfdms:lixinrong921016.@localhost:1025/eureka

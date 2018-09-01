@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <excludeFromCompile>
+      <file url="file://$PROJECT_DIR$/itfdms_common/src/main/java/com/itfdms/common/constant/enums/EnumSmsChannelTemplate.java" />
+    </excludeFromCompile>
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="itfdms_auth" />
+        <module name="itfdms_common" />
+        <module name="itfdms_config" />
+        <module name="itfdms_daemon_service" />
+        <module name="itfdms_eureka" />
+        <module name="itfdms_gateway" />
+        <module name="itfdms_mc_service" />
+        <module name="itfdms_monitor" />
+        <module name="itfdms_sso_client" />
+        <module name="itfdms_upms_service" />
+        <module name="itfdms_zipkin_db" />
+        <module name="itfdms_zipkin_elk" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="itfdms_auth" target="1.8" />
+      <module name="itfdms_blog" target="1.5" />
+      <module name="itfdms_common" target="1.8" />
+      <module name="itfdms_config" target="1.8" />
+      <module name="itfdms_daemon_service" target="1.8" />
+      <module name="itfdms_eureka" target="1.8" />
+      <module name="itfdms_foreignapi" target="1.8" />
+      <module name="itfdms_gateway" target="1.8" />
+      <module name="itfdms_mc_service" target="1.8" />
+      <module name="itfdms_model" target="1.8" />
+      <module name="itfdms_modules" target="1.8" />
+      <module name="itfdms_monitor" target="1.8" />
+      <module name="itfdms_parent" target="1.8" />
+      <module name="itfdms_sso_client" target="1.8" />
+      <module name="itfdms_upms_service" target="1.8" />
+      <module name="itfdms_visual" target="1.8" />
+      <module name="itfdms_zipkin_db" target="1.8" />
+      <module name="itfdms_zipkin_elk" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

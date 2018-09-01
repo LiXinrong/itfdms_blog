@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="itfdms_monitor:war exploded">
+    <output-path>$PROJECT_DIR$/itfdms_visual/target/itfdms_monitor-${itfdms.version}</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="itfdms_monitor" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/itfdms_visual/target/itfdms_monitor-${itfdms.version}/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="itfdms_monitor/web/Web" />
+    </root>
+  </artifact>
+</component>
