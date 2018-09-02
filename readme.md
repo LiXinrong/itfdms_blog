@@ -14,3 +14,11 @@ itfdms
      ├── itfdms-monitor -- 服务状态监控、turbine [5001]
      ├── itfdms-zipkin-elk -- zipkin、ELK监控[5002、5601]
      └── itfdms-cache-cloud -- 缓存管理、统一监控[5005]
+     
+     
+启动顺序：
+1.eureka  --注册中心
+2.config  --配置中心
+3.auth    --认证中心
+4.gateway --网关中心
+5.upms    --业务中心
