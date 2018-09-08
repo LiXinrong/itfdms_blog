@@ -614,3 +614,267 @@ Caused by: java.lang.ClassNotFoundException: io.lettuce.core.KeyValue
 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
 	... 86 common frames omitted
+2018-09-08 21:00:51,354 [main] INFO  [o.s.c.a.AnnotationConfigApplicationContext] AbstractApplicationContext.java:590 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4c3125ff: startup date [Sat Sep 08 21:00:51 CST 2018]; root of context hierarchy
+2018-09-08 21:00:52,184 [main] INFO  [c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor] EnableEncryptablePropertiesBeanFactoryPostProcessor.java:50 - Post-processing PropertySource instances
+2018-09-08 21:00:52,309 [main] INFO  [c.u.j.EncryptablePropertySourceConverter] EncryptablePropertySourceConverter.java:38 - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2018-09-08 21:00:52,312 [main] INFO  [c.u.j.EncryptablePropertySourceConverter] EncryptablePropertySourceConverter.java:38 - Converting PropertySource bootstrap [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2018-09-08 21:00:52,312 [main] INFO  [c.u.j.EncryptablePropertySourceConverter] EncryptablePropertySourceConverter.java:38 - Converting PropertySource systemProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2018-09-08 21:00:52,312 [main] INFO  [c.u.j.EncryptablePropertySourceConverter] EncryptablePropertySourceConverter.java:38 - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableMapPropertySourceWrapper
+2018-09-08 21:00:52,313 [main] INFO  [c.u.j.EncryptablePropertySourceConverter] EncryptablePropertySourceConverter.java:38 - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2018-09-08 21:00:52,313 [main] INFO  [c.u.j.EncryptablePropertySourceConverter] EncryptablePropertySourceConverter.java:38 - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2018-09-08 21:00:52,314 [main] INFO  [c.u.j.EncryptablePropertySourceConverter] EncryptablePropertySourceConverter.java:38 - Converting PropertySource applicationConfig: [classpath:/bootstrap.yml] (document #1) [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2018-09-08 21:00:52,314 [main] INFO  [c.u.j.EncryptablePropertySourceConverter] EncryptablePropertySourceConverter.java:38 - Converting PropertySource applicationConfig: [classpath:/bootstrap.yml] (document #0) [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2018-09-08 21:00:52,314 [main] INFO  [c.u.j.EncryptablePropertySourceConverter] EncryptablePropertySourceConverter.java:38 - Converting PropertySource defaultProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2018-09-08 21:00:52,339 [main] INFO  [o.s.b.f.a.AutowiredAnnotationBeanPostProcessor] AutowiredAnnotationBeanPostProcessor.java:154 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-09-08 21:00:52,437 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:328 - Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$bb30edf1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-08 21:00:52,465 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:328 - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e18758c9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-08 21:00:52,518 [main] INFO  [c.u.j.filter.DefaultLazyPropertyFilter] DefaultLazyPropertyFilter.java:31 - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2018-09-08 21:00:52,522 [main] INFO  [c.u.j.resolver.DefaultLazyPropertyResolver] DefaultLazyPropertyResolver.java:31 - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2018-09-08 21:00:52,524 [main] INFO  [c.u.j.detector.DefaultLazyPropertyDetector] DefaultLazyPropertyDetector.java:30 - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2018-09-08 21:00:52,971 [main] INFO  [o.s.cloud.netflix.eureka.InstanceInfoFactory] InstanceInfoFactory.java:71 - Setting initial instance status as: STARTING
+2018-09-08 21:00:53,082 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:349 - Initializing Eureka in region us-east-1
+2018-09-08 21:00:53,237 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:70 - Using JSON encoding codec LegacyJacksonJson
+2018-09-08 21:00:53,237 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:71 - Using JSON decoding codec LegacyJacksonJson
+2018-09-08 21:00:53,483 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:80 - Using XML encoding codec XStreamXml
+2018-09-08 21:00:53,484 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:81 - Using XML decoding codec XStreamXml
+2018-09-08 21:00:54,086 [main] INFO  [c.n.d.shared.resolver.aws.ConfigClusterResolver] ConfigClusterResolver.java:43 - Resolving eureka endpoints via configuration
+2018-09-08 21:00:54,288 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:958 - Disable delta property : false
+2018-09-08 21:00:54,288 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:959 - Single vip registry refresh property : null
+2018-09-08 21:00:54,288 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:960 - Force full registry fetch : false
+2018-09-08 21:00:54,288 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:961 - Application is null : false
+2018-09-08 21:00:54,289 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:962 - Registered Applications size is zero : true
+2018-09-08 21:00:54,289 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:964 - Application version is -1: true
+2018-09-08 21:00:54,289 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:1047 - Getting all instance registry info from the eureka server
+2018-09-08 21:00:54,994 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:1056 - The response status is 200
+2018-09-08 21:00:54,998 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:1311 - Not registering with Eureka server per configuration
+2018-09-08 21:00:55,005 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:449 - Discovery Client initialized at timestamp 1536411655003 with initial instances count: 0
+2018-09-08 21:01:01,298 [main] INFO  [o.s.b.a.l.ConditionEvaluationReportLoggingListener] ConditionEvaluationReportLoggingListener.java:101 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-09-08 21:01:01,327 [main] ERROR [org.springframework.boot.SpringApplication] SpringApplication.java:845 - Application run failed
+java.lang.IllegalStateException: No instances found of configserver (itfdms-config-server)
+	at org.springframework.cloud.config.client.ConfigServerInstanceProvider.getConfigServerInstances(ConfigServerInstanceProvider.java:25)
+	at org.springframework.cloud.config.client.ConfigServerInstanceProvider$$FastClassBySpringCGLIB$$facbf882.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.retry.interceptor.RetryOperationsInterceptor$1.doWithRetry(RetryOperationsInterceptor.java:91)
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:287)
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:164)
+	at org.springframework.retry.interceptor.RetryOperationsInterceptor.invoke(RetryOperationsInterceptor.java:118)
+	at org.springframework.retry.annotation.AnnotationAwareRetryOperationsInterceptor.invoke(AnnotationAwareRetryOperationsInterceptor.java:153)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at org.springframework.cloud.config.client.ConfigServerInstanceProvider$$EnhancerBySpringCGLIB$$1c7c45e7.getConfigServerInstances(<generated>)
+	at org.springframework.cloud.config.client.DiscoveryClientConfigServiceBootstrapConfiguration.refresh(DiscoveryClientConfigServiceBootstrapConfiguration.java:84)
+	at org.springframework.cloud.config.client.DiscoveryClientConfigServiceBootstrapConfiguration.startup(DiscoveryClientConfigServiceBootstrapConfiguration.java:69)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.__invoke(DelegatingMethodAccessorImpl.java:43)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:45009)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:45012)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.doInvoke(ApplicationListenerMethodAdapter.java:264)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.processEvent(ApplicationListenerMethodAdapter.java:182)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.onApplicationEvent(ApplicationListenerMethodAdapter.java:144)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:400)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:354)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:888)
+	at org.springframework.context.support.AbstractApplicationContext.__refresh(AbstractApplicationContext.java:553)
+	at org.springframework.context.support.AbstractApplicationContext.jrLockAndRefresh(AbstractApplicationContext.java:40002)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:41008)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:398)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:137)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.bootstrapServiceContext(BootstrapApplicationListener.java:197)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:104)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:70)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:320)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1258)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246)
+	at com.itfdms.auth.ItfdmsAuthApplication.main(ItfdmsAuthApplication.java:33)
+2018-09-08 21:01:01,331 [main] INFO  [o.s.c.a.AnnotationConfigApplicationContext] AbstractApplicationContext.java:993 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@4c3125ff: startup date [Sat Sep 08 21:00:51 CST 2018]; root of context hierarchy
+2018-09-08 21:01:01,336 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:888 - Shutting down DiscoveryClient ...
+2018-09-08 21:01:01,348 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:911 - Completed shut down of DiscoveryClient
+2018-09-08 21:01:01,351 [main] ERROR [org.springframework.boot.SpringApplication] SpringApplication.java:845 - Application run failed
+java.lang.IllegalStateException: No instances found of configserver (itfdms-config-server)
+	at org.springframework.cloud.config.client.ConfigServerInstanceProvider.getConfigServerInstances(ConfigServerInstanceProvider.java:25)
+	at org.springframework.cloud.config.client.ConfigServerInstanceProvider$$FastClassBySpringCGLIB$$facbf882.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.retry.interceptor.RetryOperationsInterceptor$1.doWithRetry(RetryOperationsInterceptor.java:91)
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:287)
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:164)
+	at org.springframework.retry.interceptor.RetryOperationsInterceptor.invoke(RetryOperationsInterceptor.java:118)
+	at org.springframework.retry.annotation.AnnotationAwareRetryOperationsInterceptor.invoke(AnnotationAwareRetryOperationsInterceptor.java:153)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at org.springframework.cloud.config.client.ConfigServerInstanceProvider$$EnhancerBySpringCGLIB$$1c7c45e7.getConfigServerInstances(<generated>)
+	at org.springframework.cloud.config.client.DiscoveryClientConfigServiceBootstrapConfiguration.refresh(DiscoveryClientConfigServiceBootstrapConfiguration.java:84)
+	at org.springframework.cloud.config.client.DiscoveryClientConfigServiceBootstrapConfiguration.startup(DiscoveryClientConfigServiceBootstrapConfiguration.java:69)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.__invoke(DelegatingMethodAccessorImpl.java:43)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:45009)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:45012)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.doInvoke(ApplicationListenerMethodAdapter.java:264)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.processEvent(ApplicationListenerMethodAdapter.java:182)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.onApplicationEvent(ApplicationListenerMethodAdapter.java:144)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:400)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:354)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:888)
+	at org.springframework.context.support.AbstractApplicationContext.__refresh(AbstractApplicationContext.java:553)
+	at org.springframework.context.support.AbstractApplicationContext.jrLockAndRefresh(AbstractApplicationContext.java:40002)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:41008)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:398)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:137)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.bootstrapServiceContext(BootstrapApplicationListener.java:197)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:104)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:70)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:320)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1258)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246)
+	at com.itfdms.auth.ItfdmsAuthApplication.main(ItfdmsAuthApplication.java:33)
+2018-09-08 21:03:10,990 [main] INFO  [o.s.c.a.AnnotationConfigApplicationContext] AbstractApplicationContext.java:590 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6bf27411: startup date [Sat Sep 08 21:03:10 CST 2018]; root of context hierarchy
+2018-09-08 21:03:11,830 [main] INFO  [c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor] EnableEncryptablePropertiesBeanFactoryPostProcessor.java:50 - Post-processing PropertySource instances
+2018-09-08 21:03:11,964 [main] INFO  [c.u.j.EncryptablePropertySourceConverter] EncryptablePropertySourceConverter.java:38 - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2018-09-08 21:03:11,966 [main] INFO  [c.u.j.EncryptablePropertySourceConverter] EncryptablePropertySourceConverter.java:38 - Converting PropertySource bootstrap [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2018-09-08 21:03:11,967 [main] INFO  [c.u.j.EncryptablePropertySourceConverter] EncryptablePropertySourceConverter.java:38 - Converting PropertySource systemProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2018-09-08 21:03:11,967 [main] INFO  [c.u.j.EncryptablePropertySourceConverter] EncryptablePropertySourceConverter.java:38 - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableMapPropertySourceWrapper
+2018-09-08 21:03:11,967 [main] INFO  [c.u.j.EncryptablePropertySourceConverter] EncryptablePropertySourceConverter.java:38 - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2018-09-08 21:03:11,968 [main] INFO  [c.u.j.EncryptablePropertySourceConverter] EncryptablePropertySourceConverter.java:38 - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2018-09-08 21:03:11,968 [main] INFO  [c.u.j.EncryptablePropertySourceConverter] EncryptablePropertySourceConverter.java:38 - Converting PropertySource applicationConfig: [classpath:/bootstrap.yml] (document #1) [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2018-09-08 21:03:11,969 [main] INFO  [c.u.j.EncryptablePropertySourceConverter] EncryptablePropertySourceConverter.java:38 - Converting PropertySource applicationConfig: [classpath:/bootstrap.yml] (document #0) [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2018-09-08 21:03:11,969 [main] INFO  [c.u.j.EncryptablePropertySourceConverter] EncryptablePropertySourceConverter.java:38 - Converting PropertySource defaultProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2018-09-08 21:03:11,998 [main] INFO  [o.s.b.f.a.AutowiredAnnotationBeanPostProcessor] AutowiredAnnotationBeanPostProcessor.java:154 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-09-08 21:03:12,107 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:328 - Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$a3a3b3fc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-08 21:03:12,134 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:328 - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$c9fa1ed4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-08 21:03:12,190 [main] INFO  [c.u.j.filter.DefaultLazyPropertyFilter] DefaultLazyPropertyFilter.java:31 - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2018-09-08 21:03:12,195 [main] INFO  [c.u.j.resolver.DefaultLazyPropertyResolver] DefaultLazyPropertyResolver.java:31 - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2018-09-08 21:03:12,197 [main] INFO  [c.u.j.detector.DefaultLazyPropertyDetector] DefaultLazyPropertyDetector.java:30 - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2018-09-08 21:03:12,641 [main] INFO  [o.s.cloud.netflix.eureka.InstanceInfoFactory] InstanceInfoFactory.java:71 - Setting initial instance status as: STARTING
+2018-09-08 21:03:12,759 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:349 - Initializing Eureka in region us-east-1
+2018-09-08 21:03:12,910 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:70 - Using JSON encoding codec LegacyJacksonJson
+2018-09-08 21:03:12,910 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:71 - Using JSON decoding codec LegacyJacksonJson
+2018-09-08 21:03:13,156 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:80 - Using XML encoding codec XStreamXml
+2018-09-08 21:03:13,157 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:81 - Using XML decoding codec XStreamXml
+2018-09-08 21:03:13,813 [main] INFO  [c.n.d.shared.resolver.aws.ConfigClusterResolver] ConfigClusterResolver.java:43 - Resolving eureka endpoints via configuration
+2018-09-08 21:03:14,012 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:958 - Disable delta property : false
+2018-09-08 21:03:14,012 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:959 - Single vip registry refresh property : null
+2018-09-08 21:03:14,013 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:960 - Force full registry fetch : false
+2018-09-08 21:03:14,013 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:961 - Application is null : false
+2018-09-08 21:03:14,013 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:962 - Registered Applications size is zero : true
+2018-09-08 21:03:14,014 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:964 - Application version is -1: true
+2018-09-08 21:03:14,014 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:1047 - Getting all instance registry info from the eureka server
+2018-09-08 21:03:14,608 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:1056 - The response status is 200
+2018-09-08 21:03:14,613 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:1311 - Not registering with Eureka server per configuration
+2018-09-08 21:03:14,621 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:449 - Discovery Client initialized at timestamp 1536411794618 with initial instances count: 1
+2018-09-08 21:03:15,127 [main] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:205 - Fetching config from server at : http://192.168.199.146:4001/
+2018-09-08 21:03:17,056 [main] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:149 - Located environment: name=itfdms-auth, profiles=[devl], label=devl, version=d0569a82ed1aff156ce3d6382a2a32ba32c943a8, state=null
+2018-09-08 21:03:17,057 [main] INFO  [o.s.c.b.c.PropertySourceBootstrapConfiguration] PropertySourceBootstrapConfiguration.java:98 - Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='https://github.com/LiXinrong/itfdms_blog_config.git/itfdms-auth-devl.yml'}, MapPropertySource {name='https://github.com/LiXinrong/itfdms_blog_config.git/application-devl.yml'}]}
+2018-09-08 21:03:17,061 [main] INFO  [c.u.j.c.EnableEncryptablePropertiesConfiguration] EnableEncryptablePropertiesConfiguration.java:69 - Bootstraping jasypt-string-boot auto configuration in context: itfdms-auth-1
+2018-09-08 21:03:17,062 [main] INFO  [com.itfdms.auth.ItfdmsAuthApplication] SpringApplication.java:666 - The following profiles are active: devl
+2018-09-08 21:03:17,087 [main] INFO  [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext] AbstractApplicationContext.java:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@bdfd763: startup date [Sat Sep 08 21:03:17 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@6bf27411
+2018-09-08 21:03:18,812 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate] RepositoryConfigurationDelegate.java:163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-09-08 21:03:18,965 [main] INFO  [o.s.integration.config.IntegrationRegistrar] IntegrationRegistrar.java:349 - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2018-09-08 21:03:19,089 [main] INFO  [o.s.c.a.ConfigurationClassBeanDefinitionReader] ConfigurationClassBeanDefinitionReader.java:306 - Skipping bean definition for [BeanMethod:name=configurableCompositeMessageConverter,declaringClass=org.springframework.cloud.stream.config.ContentTypeConfiguration]: a definition for bean 'integrationArgumentResolverMessageConverter' already exists. This top-level bean definition is considered as an override.
+2018-09-08 21:03:19,971 [main] INFO  [o.springframework.cloud.context.scope.GenericScope] GenericScope.java:294 - BeanFactory id=d85b291b-f750-3745-9a3c-e3257af61204
+2018-09-08 21:03:19,994 [main] INFO  [c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor] EnableEncryptablePropertiesBeanFactoryPostProcessor.java:50 - Post-processing PropertySource instances
+2018-09-08 21:03:20,032 [main] INFO  [c.u.j.EncryptablePropertySourceConverter] EncryptablePropertySourceConverter.java:38 - Converting PropertySource bootstrapProperties [org.springframework.core.env.CompositePropertySource] to EncryptableEnumerablePropertySourceWrapper
+2018-09-08 21:03:20,033 [main] INFO  [c.u.j.EncryptablePropertySourceConverter] EncryptablePropertySourceConverter.java:38 - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2018-09-08 21:03:20,033 [main] INFO  [c.u.j.EncryptablePropertySourceConverter] EncryptablePropertySourceConverter.java:38 - Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2018-09-08 21:03:20,033 [main] INFO  [c.u.j.EncryptablePropertySourceConverter] EncryptablePropertySourceConverter.java:38 - Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2018-09-08 21:03:20,033 [main] INFO  [c.u.j.EncryptablePropertySourceConverter] EncryptablePropertySourceConverter.java:38 - Converting PropertySource systemProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2018-09-08 21:03:20,033 [main] INFO  [c.u.j.EncryptablePropertySourceConverter] EncryptablePropertySourceConverter.java:38 - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableMapPropertySourceWrapper
+2018-09-08 21:03:20,034 [main] INFO  [c.u.j.EncryptablePropertySourceConverter] EncryptablePropertySourceConverter.java:38 - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2018-09-08 21:03:20,034 [main] INFO  [c.u.j.EncryptablePropertySourceConverter] EncryptablePropertySourceConverter.java:38 - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2018-09-08 21:03:20,034 [main] INFO  [c.u.j.EncryptablePropertySourceConverter] EncryptablePropertySourceConverter.java:38 - Converting PropertySource defaultProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2018-09-08 21:03:20,041 [main] INFO  [o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor] DefaultConfiguringBeanFactoryPostProcessor.java:130 - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2018-09-08 21:03:20,064 [main] INFO  [o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor] DefaultConfiguringBeanFactoryPostProcessor.java:158 - No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2018-09-08 21:03:20,083 [main] INFO  [o.s.b.f.a.AutowiredAnnotationBeanPostProcessor] AutowiredAnnotationBeanPostProcessor.java:154 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-09-08 21:03:20,126 [main] INFO  [c.u.j.filter.DefaultLazyPropertyFilter] DefaultLazyPropertyFilter.java:31 - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2018-09-08 21:03:20,140 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:328 - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$744bda05] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-08 21:03:20,346 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ade01bd7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-08 21:03:20,618 [main] INFO  [c.u.j.resolver.DefaultLazyPropertyResolver] DefaultLazyPropertyResolver.java:31 - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2018-09-08 21:03:20,618 [main] INFO  [c.u.j.detector.DefaultLazyPropertyDetector] DefaultLazyPropertyDetector.java:30 - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2018-09-08 21:03:20,644 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:328 - Bean 'spelConverter' of type [org.springframework.cloud.stream.config.SpelExpressionConverterConfiguration$SpelConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-08 21:03:20,652 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:328 - Bean 'org.springframework.boot.context.properties.ConversionServiceDeducer$Factory' of type [org.springframework.boot.context.properties.ConversionServiceDeducer$Factory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-08 21:03:20,660 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:328 - Bean 'redisConfigrationProperties' of type [com.itfdms.common.bean.config.redis.RedisConfigrationProperties$$EnhancerBySpringCGLIB$$147f6f5d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-08 21:03:20,665 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:328 - Bean 'redisFactoryConfig' of type [com.itfdms.common.bean.config.redis.RedisFactoryConfig$$EnhancerBySpringCGLIB$$d0e828ff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-08 21:03:20,679 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:328 - Bean 'genericObjectPoolConfig' of type [org.apache.commons.pool2.impl.GenericObjectPoolConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-08 21:03:20,978 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:171 - Initializing ExecutorService 
+2018-09-08 21:03:20,979 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:328 - Bean 'myLettuceConnectionFactory' of type [org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-08 21:03:20,999 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:328 - Bean 'redisConfiguration' of type [com.itfdms.common.bean.config.redis.RedisConfiguration$$EnhancerBySpringCGLIB$$89654c49] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-08 21:03:21,034 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:328 - Bean 'cacheManager' of type [org.springframework.data.redis.cache.RedisCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-08 21:03:21,044 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:328 - Bean 'keyGenerator' of type [com.itfdms.common.bean.config.redis.RedisConfiguration$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-08 21:03:21,048 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:328 - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$f6f251f5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-08 21:03:21,117 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:328 - Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration$$EnhancerBySpringCGLIB$$18d1d706] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-08 21:03:21,165 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:328 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$c9fa1ed4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-08 21:03:22,041 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] TomcatWebServer.java:91 - Tomcat initialized with port(s): 3000 (http)
+2018-09-08 21:03:22,090 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] DirectJDKLog.java:173 - Initializing ProtocolHandler ["http-nio-3000"]
+2018-09-08 21:03:22,095 [main] INFO  [org.apache.catalina.core.StandardService] DirectJDKLog.java:173 - Starting service [Tomcat]
+2018-09-08 21:03:22,096 [main] INFO  [org.apache.catalina.core.StandardEngine] DirectJDKLog.java:173 - Starting Servlet Engine: Apache Tomcat/9.0.10
+2018-09-08 21:03:22,101 [main] INFO  [org.apache.catalina.core.AprLifecycleListener] DirectJDKLog.java:173 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\DevTools\jdk\jdk8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\DevTools\jdk\jdk8\bin;C:\DevTools\jdk\jdk8\jre\bin;C:\DevTools\Maven\apache-maven-3.5.4\bin;C:\DevTools\NodeJS\node_modules\node_modules;C:\DevTools\NodeJS\node_modules;C:\DevTools\NodeJS;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\DevTools\GitClient\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\System32\OpenSSH\;C:\DevTools\Gradle\gradle-4.8-rc-2\bin;C:\DevTools\Git\Git\cmd;C:\DevTools\TortoiseSVN\bin;C:\DevTools\MQ\otperlang\erl10.0.1\bin;C:\DevTools\MQ\RabbitMQ\RabbitMQ Server\rabbitmq_server-3.7.7\sbin;C:\DevTools\python\Python36\Scripts\;C:\DevTools\python\Python36\;C:\Users\lxr\AppData\Local\Microsoft\WindowsApps;C:\Users\lxr\AppData\Roaming\npm;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;;.]
+2018-09-08 21:03:22,363 [main] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]] DirectJDKLog.java:173 - Initializing Spring embedded WebApplicationContext
+2018-09-08 21:03:22,363 [main] INFO  [org.springframework.web.context.ContextLoader] ServletWebServerApplicationContext.java:285 - Root WebApplicationContext: initialization completed in 5277 ms
+2018-09-08 21:03:22,687 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
+2018-09-08 21:03:22,688 [main] INFO  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-09-08 21:03:22,706 [main] INFO  [com.netflix.config.DynamicPropertyFactory] DynamicPropertyFactory.java:281 - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@db6271f
+2018-09-08 21:03:25,171 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] ExecutorConfigurationSupport.java:171 - Initializing ExecutorService  'taskScheduler'
+2018-09-08 21:03:25,862 [main] INFO  [o.s.boot.web.servlet.FilterRegistrationBean] AbstractFilterRegistrationBean.java:245 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-08 21:03:25,863 [main] INFO  [o.s.boot.web.servlet.FilterRegistrationBean] AbstractFilterRegistrationBean.java:245 - Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2018-09-08 21:03:25,864 [main] INFO  [o.s.boot.web.servlet.FilterRegistrationBean] AbstractFilterRegistrationBean.java:245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-08 21:03:25,864 [main] INFO  [o.s.boot.web.servlet.FilterRegistrationBean] AbstractFilterRegistrationBean.java:245 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-08 21:03:25,864 [main] INFO  [o.s.boot.web.servlet.FilterRegistrationBean] AbstractFilterRegistrationBean.java:245 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-08 21:03:25,865 [main] INFO  [o.s.b.w.s.DelegatingFilterProxyRegistrationBean] AbstractFilterRegistrationBean.java:245 - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-09-08 21:03:25,865 [main] INFO  [o.s.boot.web.servlet.FilterRegistrationBean] AbstractFilterRegistrationBean.java:245 - Mapping filter: 'httpTraceFilter' to: [/*]
+2018-09-08 21:03:25,866 [main] INFO  [o.s.boot.web.servlet.ServletRegistrationBean] ServletRegistrationBean.java:187 - Servlet dispatcherServlet mapped to [/]
+2018-09-08 21:03:26,077 [main] WARN  [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext] AbstractApplicationContext.java:558 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mobileLoginSuccessHandler': Unsatisfied dependency expressed through field 'authorizationServerTokenServices'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerEndpointsConfiguration': Unsatisfied dependency expressed through field 'configurers'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'itfdmsAuthorizationConfig': Unsatisfied dependency expressed through field 'authenticationManager'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.authentication.AuthenticationManager' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2018-09-08 21:03:26,079 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] ExecutorConfigurationSupport.java:208 - Shutting down ExecutorService 'taskScheduler'
+2018-09-08 21:03:26,084 [main] WARN  [o.s.beans.factory.support.DisposableBeanAdapter] DisposableBeanAdapter.java:347 - Invocation of destroy method 'close' failed on bean with name 'eurekaRegistration': org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+2018-09-08 21:03:26,216 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:208 - Shutting down ExecutorService
+2018-09-08 21:03:26,218 [main] INFO  [org.apache.catalina.core.StandardService] DirectJDKLog.java:173 - Stopping service [Tomcat]
+2018-09-08 21:03:26,256 [main] INFO  [o.s.b.a.l.ConditionEvaluationReportLoggingListener] ConditionEvaluationReportLoggingListener.java:101 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-09-08 21:03:26,524 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:171 - Initializing ExecutorService 
+2018-09-08 21:03:26,543 [main] ERROR [o.s.b.diagnostics.LoggingFailureAnalysisReporter] LoggingFailureAnalysisReporter.java:42 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field authenticationManager in com.itfdms.auth.config.ItfdmsAuthorizationConfig required a bean of type 'org.springframework.security.authentication.AuthenticationManager' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.authentication.AuthenticationManager' in your configuration.
+
