@@ -198,7 +198,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Servlet</find>
       <find>getPrefix</find>
       <find>getServletPrefix</find>
       <find>mysql</find>
@@ -228,6 +227,7 @@
       <find>http://itfdms:itfdms6666@localhost:1025/eureka</find>
       <find>http://itfdms:lixinrong921016.@eureka:1025/eureka</find>
       <find>spring-cloud-starter-zipkin</find>
+      <find>druid</find>
     </findStrings>
     <replaceStrings>
       <replace>http://itfdms:lixinrong921016.@localhost:1025/eureka</replace>
