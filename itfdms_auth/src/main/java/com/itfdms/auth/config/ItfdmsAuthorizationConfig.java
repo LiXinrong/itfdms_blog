@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.annotation.Order;
-import org.springframework.data.redis.connection.RedisConnectionFactory;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -22,7 +22,6 @@ import org.springframework.security.oauth2.provider.token.TokenEnhancer;
 import org.springframework.security.oauth2.provider.token.TokenEnhancerChain;
 import org.springframework.security.oauth2.provider.token.TokenStore;
 import org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter;
-import org.springframework.security.oauth2.provider.token.store.redis.RedisTokenStore;
 
 import javax.sql.DataSource;
 import java.util.Arrays;
@@ -57,7 +56,7 @@ public class ItfdmsAuthorizationConfig extends AuthorizationServerConfigurerAdap
     @Autowired
     private UserDetailsService userDetailsService;
     @Autowired
-    private RedisConnectionFactory redisConnectionFactory;
+    private RedisTemplate redisTemplate;
 
 
     @Override
@@ -107,14 +106,14 @@ public class ItfdmsAuthorizationConfig extends AuthorizationServerConfigurerAdap
      * tokenstore 定制化处理
      *
      * @return TokenStore
-     * 1. 如果使用的 redis-cluster 模式请使用 PigRedisTokenStore
-     * PigRedisTokenStore tokenStore = new PigRedisTokenStore();
-     * tokenStore.setRedisTemplate(redisTemplate);
+     * 1. 如果使用的非 redis-cluster 模式请使用  RedisTokenStore tokenStore = new RedisTokenStore(redisConnectionFactory);
+     * tokenStore.setPrefix(SecurityConstants.ITFDMS_PREFIX);
+     * return tokenStore;
      */
     @Bean
     public TokenStore redisTokenStore() {
-        RedisTokenStore tokenStore = new RedisTokenStore(redisConnectionFactory);
-        tokenStore.setPrefix(SecurityConstants.ITFDMS_PREFIX);
+        ItfdmsRedisTokenStore tokenStore = new ItfdmsRedisTokenStore();
+        tokenStore.setRedisTemplate(redisTemplate);
         return tokenStore;
     }
 
