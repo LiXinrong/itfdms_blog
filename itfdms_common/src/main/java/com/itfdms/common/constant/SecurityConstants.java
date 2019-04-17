@@ -140,6 +140,18 @@ public interface SecurityConstants {
     String BASE_FIND_STATEMENT = "select " + CLIENT_FIELDS
             + " from sys_oauth_client_details";
 
+
+    /**
+     * 内部
+     */
+    String FROM_IN = "Y";
+
+    /**
+     * 标志
+     */
+    String FROM = "from";
+
+
     /**
      * 默认的查询语句
      */

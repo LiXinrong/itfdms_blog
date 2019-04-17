@@ -73,4 +73,13 @@ public interface CommonConstant {
      * 路由信息  Redis保存的key
      */
     String ROUTE_KEY = "route_key";
+
+    /**
+     * 成功标记
+     */
+    Integer SUCCESS = 0;
+    /**
+     * 失败标记
+     */
+    Integer FAIL = 1;
 }

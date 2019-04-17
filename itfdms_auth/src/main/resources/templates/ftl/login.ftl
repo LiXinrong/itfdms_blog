@@ -24,7 +24,7 @@
       </form>
     </div>
     <footer>
-      <p>support by: lengleng</p>
+      <p>support by: lxr</p>
       <p>email: <a href="mailto:wangiegie@gmail.com">1535509950@qq.com</a>.</p>
     </footer>
   </body>
